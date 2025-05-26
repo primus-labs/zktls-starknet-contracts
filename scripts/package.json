@@ -1,0 +1,16 @@
+{
+  "name": "zktls-starknet-contracts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "starknet": "^7.3.0"
+  }
+}
