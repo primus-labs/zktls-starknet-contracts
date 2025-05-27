@@ -1,0 +1,23 @@
+[package]
+name = "primus_zktls_example"
+version = "0.1.0"
+edition = "2024_07"
+
+[dependencies]
+starknet = "2.11.4"
+# primus_zktls = { git = "https://github.com/primus-labs/zktls-starknet-contracts.git" }
+primus_zktls = { path = "../" }
+
+
+[dev-dependencies]
+snforge_std = "0.42.0"
+assert_macros = "2.11.4"
+
+[[target.starknet-contract]]
+sierra = true
+
+[scripts]
+test = "snforge test"
+
+[tool.scarb]
+allow-prebuilt-plugins = ["snforge_std"]
